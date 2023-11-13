@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowling Score Calculater</title>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+<script>
+    function chageLangSelect(){
+    var ScoreSelect = document.getElementById("Score1");
+    var selectValue = ScoreSelect.options[ScoreSelect.selectedIndex].value;
+    var selectText = ScoreSelect.options[ScoreSelect.selectedIndex].text;
+    if(selectValue == 'X'){
+        $(F_Score).hide();
+    }
+}
+     
+
+</script>
+</head>
+<body>
+<div id="TitleArea">
+</div>
+<div>
+    <table id="Converter" class="converterTable">
+        <caption></caption>
+        <thead>
+          <tr>
+            <th class="ConverterTH" scope="col">User Name</th>
+            <th class="ConverterTH" scope="col">1</th>
+            <th class="ConverterTH" scope="col">2</th>
+            <th class="ConverterTH" scope="col">3</th>
+            <th class="ConverterTH" scope="col">4</th>
+            <th class="ConverterTH" scope="col">5</th>
+            <th class="ConverterTH" scope="col">6</th>
+            <th class="ConverterTH" scope="col">7</th>
+            <th class="ConverterTH" scope="col">8</th>
+            <th class="ConverterTH" scope="col">9</th>
+            <th class="ConverterTH" scope="col">10</th>
+            <th class="ConverterTH" scope="col">Total</th>
+            <th class="ConverterTH" scope="col">Place</th>
+          </tr>
+        </thead>
+        <tbody id="my-tbody">
+          <tr>
+            <th class="ConverterTH" scope="row"><input type="text" id="v1_1" placeholder="Type User Name" autofocus></th>
+            <td class="ScoreBox">
+                <select id="Score1" name="Score1" class="Fr_Score">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="X">X</option>
+                </select>
+                <select id="Score2" name="Score" class="F_Score">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="/">/</option>
+                </select>
+            </td>
+          <tr>
+            <th class="ConverterTH" scope="row"><input type="text" id="v2_1" placeholder="Title(과목명)"></th>
+            <td><input type="number" id="v2_2" placeholder="Credit(단위 수)" min="0" max="40"></td>
+            <td><input type="number" id="v2_3" placeholder="Rank(등급)" min="1" max="9"></td>
+          </tr>
+          <tr>
+            <th class="ConverterTH" scope="row"><input type="text" id="v3_1" placeholder="Title(과목명)"></th>
+            <td><input type="number" id="v3_2" placeholder="Credit(단위 수)" min="0" max="40"></td>
+            <td><input type="number" id="v3_3" placeholder="Rank(등급)" min="1" max="9"></td>
+          </tr>
+          <tr>
+            <th class="ConverterTH" scope="row"><input type="text" id="v4_1" placeholder="Title(과목명)"></th>
+            <td><input type="number" id="v4_2" placeholder="Credit(단위 수)" min="0" max="40"></td>
+            <td><input type="number" id="v4_3" placeholder="Rank(등급)" min="1" max="9"></td>
+          </tr>
+          <tr>
+            <th class="ConverterTH" scope="row"><input type="text" id="v5_1" placeholder="Title(과목명)"></td>
+            <td><input type="number" id="v5_2" placeholder="Credit(단위 수)" min="0" max="40"></td>
+            <td><input type="number" id="v5_3" placeholder="Rank(등급)" min="1" max="9"></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Scale(만점)<br>
+              <input type="radio" name="Max" id="M_4_0" value="4_0" checked><lable for="M_4.0">4.0</lable>
+              <input type="radio" name="Max" id="M_4_3" value="4_3"><lable for="M_4.3">4.3</lable>
+              <input type="radio" name="Max" id="M_4_5" value="4_5"><lable for="M_4.5">4.5</lable>
+              <input type="radio" name="Max" id="M_5_0" value="5_0"><lable for="M_5.0">5.0</lable>
+              </th>
+            <td>
+              Total Credit(이수 시간)<br>
+              <input type="number" id="TotalCredit" placeholder="Total(총합)" disabled>
+            </td>
+            <td>
+              Average GPA(평균GPA)<br>
+              <input type="number" id="Result" placeholder="Avg GPA(평균)" disabled><br>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      </div>
+</body>
+</html>
