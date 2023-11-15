@@ -6,18 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bowling Score Calculater</title>
     <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
-<script>
-    function chageLangSelect(){
-    var ScoreSelect = document.getElementById("Score1");
-    var selectValue = ScoreSelect.options[ScoreSelect.selectedIndex].value;
-    var selectText = ScoreSelect.options[ScoreSelect.selectedIndex].text;
-    if(selectValue == 'X'){
-        $(F_Score).hide();
-    }
-}
-     
-
-</script>
+    <script src="script.js"></script>
 </head>
 <body>
 <div id="TitleArea">
@@ -44,32 +33,92 @@
         </thead>
         <tbody id="my-tbody">
           <tr>
-            <th class="ConverterTH" scope="row"><input type="text" id="v1_1" placeholder="Type User Name" autofocus></th>
-            <td class="ScoreBox">
-                <select id="Score1" name="Score1" class="Fr_Score">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="X">X</option>
-                </select>
-                <select id="Score2" name="Score" class="F_Score">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="/">/</option>
-                </select>
+            <th class="Users user1" scope="row"><input type="text" id="User1_name" placeholder="Type User Name" autofocus></th>
+            <td class="ScoreBox User1">
+              <select id="Score Score1" class="Fr_Score">
+                <option value="NA"></option>
+                <option value="0">-</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="X">X</option>
+              </select>
+              <select id="Score Score2" class="F_Score">
+                <option value="NA"></option>
+                <option value="0">-</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="/">/</option>
+              </select>
+              <select id="Score Score3" class="Fr_Score">
+                <option value="NA"></option>
+                <option value="0">-</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="X">X</option>
+              </select>
+              <select id="Score Score4" class="F_Score">
+                <option value="NA"></option>
+                <option value="0">-</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="/">/</option>
+              </select>
+              <select id="Score Score5" class="Fr_Score">
+                <option value="NA"></option>
+                <option value="0">-</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="X">X</option>
+              </select>
+              <select id="Score Score6" class="F_Score">
+                <option value="NA"></option>
+                <option value="0">-</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="/">/</option>
+              </select>            
             </td>
           <tr>
             <th class="ConverterTH" scope="row"><input type="text" id="v2_1" placeholder="Title(과목명)"></th>
